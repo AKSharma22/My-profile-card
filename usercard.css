@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    display: grid;
+    grid-area: "left left left left left left"
+                "right right right right right right";
+                border: solid rgb(65, 131, 65) 40px;
+                margin: 20px;
+                height: 600px;
+                width: 800px;
+                
+}
+
+.left{
+    grid-area: left;
+    background-color: white;
+    text-align: center;
+    grid-column: 1/2;
+}
+#image1{
+    border-radius: 50%;
+}
+.right
+{   grid-area: right;
+    background-color: rgb(50, 80, 50);
+    text-align: center;
+    color: whitesmoke;
+}
+
+@media (max-width:600px) {
+    .main{
+        grid-template-areas: "left left left left left left"
+        "right right right right right right";
+    }
+}
+#follow{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 8px;
+    padding: 7px 20px 7px 20px;
+    background-color: rgb(73, 73, 116);
+}
+#Message{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 8px;
+    padding: 7px 18px 7px 18px;
+    background-color: rgb(117, 143, 65);
+}
+#follow:hover{
+    cursor: pointer;
+    background-color: rgb(20, 20, 136);
+}
+#Message:hover{
+    cursor: pointer;
+    background-color: rgb(145, 207, 20);
+}
+
